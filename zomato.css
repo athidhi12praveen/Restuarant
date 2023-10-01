@@ -4,6 +4,8 @@ body{
     text-decoration: none;
 }
 
+/* ----------Header---------- */
+
 header{
     width: 100%;
     height: 680px;
@@ -15,7 +17,7 @@ header{
 .headerimage{
     position: absolute;
     width: 100%;
-    height: 680px;
+    height: 680%;
     top: -20vh;
     z-index: -1;
 }
@@ -93,6 +95,7 @@ header{
     padding-left: 20px;
     font-size: 15px;
     color: red;
+    cursor: pointer;
 }
 
 .search .input{
@@ -116,6 +119,19 @@ header{
     border: none;
     outline: none;
 }
+
+@media(max-width:600px){
+    .nav{padding-left: 5px; font-size: 0.6em; font-weight: bolder; margin-top: 3vh; margin-left: 0.5vh; }
+    .nav-bar{gap: 5px;margin-right: 1vh; padding-right: 5px;}
+    .search{width: 550px; height: 30px;}
+    .head h3{font-size: 1em;}
+    .headerimage{z-index: -1; height: 330;}
+    .logo{margin-top: 15vh;}
+    .head h3{margin-top: 5vh;}
+    .search{margin-top: 5vh;}
+}
+
+/* ----------Section 1---------- */
 
 .sec{
     display: flex;
@@ -154,12 +170,17 @@ header{
     justify-content: space-between;
 }
 
+.bx a{
+    text-decoration: none;
+    color: black;
+}
+
 .box h2{
     align-items: center;
     font-size: 1em;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding left: 10px;
+    padding-left: 10px;
 }
 
 .box p{
@@ -169,6 +190,13 @@ header{
     color: gray;
 }
 
+@media(max-width:600px){
+    .sec{display: inline; justify-content: center; margin-left: 120px; margin-right: 120px; margin-bottom: 40px;}
+    .box{width: 350px; margin-left: 120px; margin-right: 120px; margin-bottom: 40px;}
+}
+
+/* ----------Section 2---------- */
+
 .col{
     margin: 60px 250px;
 }
@@ -177,12 +205,6 @@ header{
     font-weight: lighter;
     font-size: 3rem;
     margin-bottom: 10px;
-}
-
-.collection div{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
 }
 
 .collection div span a{
@@ -225,6 +247,7 @@ header{
 .boxes i{
     color: white;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 .boxes img{
@@ -247,6 +270,15 @@ header{
     margin: 50px;
     color: black;
 }
+
+@media(max-width:600px){
+    .col{margin: 60px 60px;}
+    .collection h2{margin-left: 30px;}
+    .collection div{justify-content: space-between; padding-left: 10px; padding-right: 10px; margin-left: 30px; margin-right: 30px; gap: 50px;}
+    .coll{display: inline; margin-top: 30px; margin-bottom: 130px; margin-left: 111px; margin-right: 111px;}
+    .boxes{margin-bottom: 30px; margin-left: 111px; margin-right: 111px;}
+}
+/* ----------Section 3---------- */
 
 .sec1{
     display: grid;
@@ -288,6 +320,18 @@ header{
     display: inline-block;
     text-overflow: ellipsis;
 }
+
+.box1 div p i{
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+.sec1{display: inline; margin-left: 80px; margin-right: 80px;}
+.box1{margin-left: 80px; margin-right: 80px; margin-bottom: 30px;}
+}
+
+/* ----------Section 4---------- */
 
 .last{
     display: flex;
@@ -349,7 +393,7 @@ header{
     width: 230px;
     border: 1px solid white;
     font-size: 1rem;
-    padding left: 15px;
+    padding-left: 15px;
 }
 
 .place{
@@ -388,7 +432,15 @@ button a{
 .imge img{
     width: 137px;
     height: 40px;
+    cursor: pointer;
 }
+
+@media(max-width:600px){
+    .lst img{width: 200px; height: 250px; padding-left: 40px;}
+    .imge img{width: 137px; height: 40px;}
+}
+
+/* ----------Section 5---------- */
 
 .stn{
     padding-left: 250px;
@@ -415,12 +467,20 @@ button a{
 
 .box2 div p i{
     padding-left: 35px;
+    cursor: pointer;
 }
 
 .one img{
     width: 128px;
     height: 32px;
 }
+
+@media(max-width:600px){
+    .stn{padding-left: 100px;}
+    .box2{width: 300px; margin-left: 41px; margin-right: 41px;}
+}
+
+/* ----------Footer---------- */
 
 .foot{
     padding: 40px 120px;
@@ -446,6 +506,7 @@ button a{
 
 .one-1 span i{
     padding: 10px;
+    cursor: pointer;
 }
 
 .two{
@@ -486,10 +547,30 @@ button a{
 .box-3 i{
     margin-left: 5px;
     margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.box-3 img{
+    cursor: pointer;
 }
 
 .three{
     padding: 10px 0;
     color: grey;
     font-size: 1rem;
+}
+
+@media(max-width:600px){
+    .one{display: inline; width: 600px; margin-left: 10px;}
+    .ftimg{margin-bottom: 20px; margin-left: 100px; margin-right: 100px;}
+    .one-1{margin-left: 20px; margin-right: 20px;}
+    .two{margin-left: 91px; margin-right:91px; display: inline;}
+    .two img{width: 137px; height: 40px; margin-left: 91px; margin-right: 91px;}
+    .two a{width: 150px; margin-bottom: 7px; text-decoration: none; color: gray; font-size: 1rem; margin-left: 110px; margin-right:110px; display: flex;}
+    .two h4{margin-left: 110px; margin-right:110px; width: 600px;}
+    .box-3{ margin-left: 20px; margin-right: 20px; width: 600px;}
+    .box-3 h4{margin-left: 91px; margin-right: 91px;}
+    .box-3 i{ font-size: larger; padding-left: 38px; margin-left: 40px;}
+    .three{margin-left: 10px; margin-right: 10px;}
+    
 }
